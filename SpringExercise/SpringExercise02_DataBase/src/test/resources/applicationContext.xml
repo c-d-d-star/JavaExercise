@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--管理DruidDataSource对象-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/spring_db"/>
+        <property name="user" value="root"/>
+        <property name="password" value="root"/>
+        <property name="maxPoolSize" value="1000"/>
+    </bean>
+</beans>
+
+
+        <!--一般配置文件的跟标签都是负数的形式，然后是单数形式，
+           -->
+
+
+         <!--怎么来注入对象
+         set方法注入
+         构造器注入
+         属性值，什么的要有了才能进行注入啊
+         就比如说，我把第三方的内容给注入到自己的系统当中来进行使用第三方的库
+         -->

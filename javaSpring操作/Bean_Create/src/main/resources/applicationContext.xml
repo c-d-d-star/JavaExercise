@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl"/>
+    <!--这个一步就是将bean注册到IOC容器里面来，此时的class是需要创建对象的，接口是不可以的，是需要构造器来创建对象的-->
+
+</beans>
+
+<!--如果是第三方的方式来进行管理的化，那么在配置文件里面需要加上的就是包的扫描-->
+<!--<context:property-placeholder location="jdbc.properties"/>-->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--bean标签标示配置bean
+    	id属性标示给bean起名字
+    	class属性表示给bean定义类型
+	-->
+    <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl"/>
+    <bean id="bookService" class="com.itheima.service.impl.BookServiceImpl"/>
+
+</beans>
+
+
+        <!--一般配置文件的跟标签都是负数的形式，然后是单数形式，
+           -->
+
+
+         <!--怎么来注入对象
+         set方法注入
+         构造器注入
+         属性值，什么的要有了才能进行注入啊
+         就比如说，我把第三方的内容给注入到自己的系统当中来进行使用第三方的库
+         -->
